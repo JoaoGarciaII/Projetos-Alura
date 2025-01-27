@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #222831;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #76ABAE;
+    --cor-hover: #31363F;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Mountserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 10%;
+}
+.cabecalho-nav {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.foto-robozinho {
+    border-radius: 20px;
+    width: 50%;
+}
+strong {
+    color: var(--cor-terciaria);
+}
+.conteudo-principal {
+    display: flex;
+    padding: 10% 10%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.conteudo-escrita {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.conteudo-titulo-principal {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.conteudo-titulo-secundario {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.conteudo-principal-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.escrita-botoes-link {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.botoes-link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.botoes-link:hover {
+    background-color: var(--cor-hover);
+}
+.rodape {
+    padding: 20px;
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size:  1.5rem;
+}
+@media (max-width: 1200px) {
+    .conteudo-principal {
+        flex-direction: column-reverse;
+        padding: 10%;
+    }
+    .cabecalho-menu {
+        justify-content: center;
+    }
+    .conteudo-escrita {
+        width: auto;
+    }
+    .foto-robozinho {
+        width: 100%;
+    }
+}
